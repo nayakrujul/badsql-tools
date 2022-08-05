@@ -3,7 +3,7 @@ The badsql-tools library in Python - use badsql from the command line
 
 ### badsql-tools docs (for version 2.2 - August 2022)
 
-Create a badsql db by specifying headers
+#### Create a badsql db by specifying headers
 
 ```
 $ badsql_mkdb "Hello" "World"
@@ -11,7 +11,9 @@ $ badsql_mkdb "Hello" "World"
 | ----- | ----- |
 ```
 
-Insert a row, specifying line number as first argument
+Note: when using `badsql_mkdb`, the previous db is deleted and replaced with the new, empty one
+
+#### Insert a row, specifying line number as first argument
 
 ```
 $ badsql_insertrow 1 "Foo" "Bar"
