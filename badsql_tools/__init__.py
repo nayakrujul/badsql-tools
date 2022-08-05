@@ -1,1 +1,1 @@
-from badsql.db import db, load
+import badsql

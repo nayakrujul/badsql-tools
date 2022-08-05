@@ -1,3 +1,7 @@
 [console_scripts]
-badsqldb = badsql_tools.test:main
+badsql_display = badsql_tools.badsql_tools:display
+badsql_insertrow = badsql_tools.badsql_tools:insertrow
+badsql_mkdb = badsql_tools.badsql_tools:mkdb
+badsql_removerow = badsql_tools.badsql_tools:removerow
+badsql_select = badsql_tools.badsql_tools:select
 

@@ -4,7 +4,7 @@ long_description = 'A file-based version of SQL for the command line.'
 
 setup(
   name = 'badsql-tools',
-  version = '1.3',
+  version = '4.2',
   license='Apache',
   description = 'SQL but worse for the command line',
   author = 'Rujul Nayak',
@@ -33,7 +33,11 @@ setup(
   packages = find_packages(),
   entry_points ={
             'console_scripts': [
-                'badsqldb = badsql_tools.test:main'
+                'badsql_mkdb = badsql_tools.badsql_tools:mkdb',
+                'badsql_insertrow = badsql_tools.badsql_tools:insertrow',
+                'badsql_select = badsql_tools.badsql_tools:select',
+                'badsql_display = badsql_tools.badsql_tools:display',
+                'badsql_removerow = badsql_tools.badsql_tools:removerow',
             ]
   }
 )
