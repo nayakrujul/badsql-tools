@@ -55,3 +55,56 @@ $ badsql_select "len(Hello) <= 4"
 | val1  | val2  |
 | Foo   | Bar   |
 ```
+
+The optional second parameter `save` defaults to False. If True, the selected db is saved to memory. If False, it is forgotten after displaying.
+
+```
+$ badsql_display
+| Hello | World |
+| ----- | ----- |
+| val1  | val2  |
+| test1 | test2 |
+| Foo   | Bar   |
+
+$ badsql_select "len(Hello) <= 4"
+| Hello | World |
+| ----- | ----- |
+| val1  | val2  |
+| Foo   | Bar   |
+
+$ badsql_display
+| Hello | World |
+| ----- | ----- |
+| val1  | val2  |
+| test1 | test2 |
+| Foo   | Bar   |
+
+$ badsql_select "len(Hello) <= 4" True
+| Hello | World |
+| ----- | ----- |
+| val1  | val2  |
+| Foo   | Bar   |
+
+$ badsql_display
+| Hello | World |
+| ----- | ----- |
+| val1  | val2  |
+| Foo   | Bar   |
+```
+
+#### Remove row from row number
+
+```
+$ badsql_display
+| Hello | World |
+| ----- | ----- |
+| val1  | val2  |
+| test1 | test2 |
+| Foo   | Bar   |
+
+$ badsql_removerow 2
+| Hello | World |
+| ----- | ----- |
+| val1  | val2  |
+| Foo   | Bar   |
+```
