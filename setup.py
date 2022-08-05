@@ -4,7 +4,7 @@ long_description = 'A file-based version of SQL for the command line.'
 
 setup(
   name = 'badsql-tools',
-  version = '0.1',
+  version = '1.3',
   license='Apache',
   description = 'SQL but worse for the command line',
   author = 'Rujul Nayak',
@@ -13,6 +13,7 @@ setup(
   download_url = 'https://github.com/nayakrujul/badsql-tools/archive/refs/tags/v_01.tar.gz',
   keywords = ['database', 'SQL', 'file'],
   install_requires=[
+          'badsql'
       ],
   classifiers=[
     'Development Status :: 3 - Alpha', 
@@ -32,7 +33,7 @@ setup(
   packages = find_packages(),
   entry_points ={
             'console_scripts': [
-                'badsqldb = badsql-tools/db:db'
+                'badsqldb = badsql_tools.test:main'
             ]
   }
 )

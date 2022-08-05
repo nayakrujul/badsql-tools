@@ -1,0 +1,3 @@
+[console_scripts]
+badsqldb = badsql_tools.test:main
+
