@@ -1,7 +1,17 @@
 # badsql-tools
 The badsql-tools library in Python - use badsql from the command line
 
-### badsql-tools docs (for version 3.1 - August 2022)
+### Setup
+
+#### Install from pip:
+
+```
+pip install badsql-tools
+```
+
+### Documentation
+
+for version 4.2
 
 #### Create a badsql db by specifying headers
 
