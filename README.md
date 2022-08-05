@@ -9,9 +9,7 @@ The badsql-tools library in Python - use badsql from the command line
 pip install badsql-tools
 ```
 
-### Documentation
-
-for version 4.2
+### Documentation for version 4.2
 
 #### Create a badsql db by specifying headers
 
