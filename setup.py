@@ -4,7 +4,7 @@ long_description = 'A file-based version of SQL for the command line.'
 
 setup(
   name = 'badsql-tools',
-  version = '4.2',
+  version = '5.1',
   license='Apache',
   description = 'SQL but worse for the command line',
   author = 'Rujul Nayak',
