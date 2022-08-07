@@ -12,7 +12,7 @@ The documentation for the badsql library can be found [here](https://github.com/
 pip install badsql-tools
 ```
 
-### Documentation for version 4.2
+### Documentation
 
 #### Create a badsql db by specifying headers
 
